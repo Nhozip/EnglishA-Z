@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_theme"
+            android:icon="@drawable/themr"
+            android:title="Theme" />
+        <item
+            android:id="@+id/nav_like"
+            android:icon="@drawable/like"
+            android:title="Yêu thích" />
+        <item
+            android:id="@+id/nav_meo"
+            android:icon="@drawable/meo"
+            android:title="Mẹo thi" />
+    </group>
+
+    <item android:title="Khác">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Góp ý" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Đánh giá 5*" />
+
+            <item
+                android:id="@+id/nav_khac"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Ứng dụng khác" />
+        </menu>
+    </item>
+
+</menu>

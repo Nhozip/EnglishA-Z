@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.it.nhozip.englisha_z.widgets.AutoScrollViewPager
+        android:id="@+id/scroll_pager"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+    <TextView
+        android:textColor="#fffefe"
+        android:id="@+id/title"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+        <com.it.nhozip.englisha_z.widgets.CirclePageIndicator
+            android:padding="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/scroll_pager"
+            android:id="@+id/indicator"
+            app:pageColor="#6c6c6c"
+             />
+
+</RelativeLayout>

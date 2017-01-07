@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="300x80"
+        ads:adUnitId="ca-app-pub-3082814971751832/8535718508"
+        android:layout_below="@+id/c"
+        >
+    </com.google.android.gms.ads.NativeExpressAdView>
+            <LinearLayout
+                android:id="@+id/c"
+                android:layout_below="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quoái vật dưới biển"
+                    android:textColor="@color/item_move_name"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/txtActor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diễn viên : Xuân Hinh,Chiến Thăng,Hoài Linh"
+                    android:textColor="@color/item_move_view"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:menu_labels_style="@style/MenuLabelsStyle"
+        fab:menu_labels_showAnimation="@anim/jump_from_down"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_shadowColor="#444"
+        fab:menu_colorNormal="#FFB805"
+        fab:menu_colorPressed="#F2AB00"
+        fab:menu_colorRipple="#D99200"
+        android:layout_below="@+id/youtube_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fablike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like"
+            fab:fab_label="Menu item 2"
+            style="@style/MenuButtonsStyle" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/like"
+            fab:fab_label="Menu item 2"
+            style="@style/MenuButtonsStyle" />
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

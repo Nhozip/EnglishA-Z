@@ -1,0 +1,4 @@
+include ':app'
+
+include ':TestRobotium'
+include ':ApplicationTestRobotium'

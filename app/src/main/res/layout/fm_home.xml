@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Học Online"
+            android:textSize="20dp"
+            android:textColor="#444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fContent"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            ></FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+                <LinearLayout
+                    android:id="@+id/toeic"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_weight="1"
+                        android:background="@drawable/toeic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="TOEIC 550 Cấp Tốc"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+                <LinearLayout
+                    android:id="@+id/ielts"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:background="@drawable/ielts"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_weight="3"
+
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="Kỹ Năng IELTS"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:id="@+id/nguphap"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_weight="1"
+                        android:background="@drawable/nguphap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text="Ngữ Pháp Cơ Bản"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+                <LinearLayout
+                    android:id="@+id/luyenphatAm"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:background="@drawable/phatam"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text=" Luyện Phát Âm"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+                <LinearLayout
+                    android:id="@+id/luyenNghe"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:background="@drawable/nghe"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_weight="3"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text=" Luyện Nghe"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+                <LinearLayout
+                    android:id="@+id/phongVan"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_weight="1"
+                        android:background="@drawable/phongvan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+
+                        android:layout_weight="3"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text=" Phỏng Vấn"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+                <LinearLayout
+                    android:id="@+id/tuVug"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_weight="1"
+                        android:background="@drawable/tuvung"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+
+                        android:layout_weight="3"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text=" Từ Vựng Kết Hợp"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="2dp">
+                <LinearLayout
+                    android:id="@+id/nhachay"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:background="@drawable/hat"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+
+                        android:layout_weight="3"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:text=" Nhạc tiếng anh hay"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/adView1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_below="@+id/fm_main"
+            android:layout_centerHorizontal="true"
+            ads:adSize="300x80"
+            ads:adUnitId="ca-app-pub-3082814971751832/3121640100"></com.google.android.gms.ads.NativeExpressAdView>
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
+

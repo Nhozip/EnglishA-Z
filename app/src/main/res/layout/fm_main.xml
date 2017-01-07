@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fContent"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ScrollView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="30dp"
+                    android:drawableLeft="@drawable/abc"
+                    android:layout_margin="3dp"
+                    android:id="@+id/x"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_item_home"
+                    android:gravity="center"
+                    android:text="ABC"
+                    android:typeface="normal"
+                    android:textColor="#FFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:paddingLeft="30dp"
+                    android:drawableLeft="@drawable/one"
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:text="TOEIC 550"
+                    android:textColor="#FFF"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingLeft="30dp"
+                    android:drawableLeft="@drawable/two"
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:text="IELTS"
+                    android:textColor="#FFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_margin="3dp"
+                    android:paddingLeft="30dp"
+                    android:drawableLeft="@drawable/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:text="TOEFL"
+                    android:textColor="#FFF"
+                    android:textSize="20dp"
+                    android:id="@+id/textView3" />
+            </LinearLayout>
+            <TextView
+              android:layout_marginLeft="50dp"
+                android:drawableLeft="@drawable/music"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:background="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Tổng hợp bài hát tiếng anh hay"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+            </TextView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
