@@ -39,6 +39,7 @@
     <string name="demo_tab_no_title">No Title</string>
     <string name="demo_tab_like_a_medium_top">Top</string>
     <string name="demo_tab_like_a_medium_latest">Latest</string>
+    <string name="appLink">https://play.google.com/store/apps/details?id=lozi.apps.hoaipc.lozisave</string>
 
 
 </resources>

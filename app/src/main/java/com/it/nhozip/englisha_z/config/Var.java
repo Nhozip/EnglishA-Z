@@ -7,7 +7,16 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
+import android.util.Log;
 import android.widget.Toast;
+
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.share.model.AppInviteContent;
+import com.facebook.share.widget.AppInviteDialog;
+import com.it.nhozip.englisha_z.MainActivity;
+import com.it.nhozip.englisha_z.R;
 
 import java.util.List;
 
@@ -19,6 +28,42 @@ public class Var {
     public static final String LOGIN = "login";
     private static SharedPreferences pre;
     public  static  int with=0;
+    public  static  FacebookCallback<AppInviteDialog.Result> appInviteDialogResult;
+
+    public static void inviteFriendFB(CallbackManager callbackManager,MainActivity mainActivity) {
+        //App link là đường dẫn của app trên googlePlay
+       // String AppURl = mainActivity.getString(R.string.appLink);
+        String AppURl = "http://play.google.com/store/apps/details?id=com.it.nhozip.englisha_z";
+      //  String previewImageUrl = Constant.AppImageName;        // size recommend is 1,200 x 628 pixels
+        if (AppInviteDialog.canShow()) {
+            AppInviteContent content = new AppInviteContent.Builder()
+                    .setApplinkUrl(AppURl)
+                   // .setPreviewImageUrl(previewImageUrl)
+                    .build();
+            AppInviteDialog appInviteDialog = new AppInviteDialog(mainActivity);
+            appInviteDialog.registerCallback(callbackManager, appInviteDialogResult);
+            appInviteDialog.show(content);
+        }
+    }
+
+    public static void initFB() {
+        appInviteDialogResult = new FacebookCallback<AppInviteDialog.Result>() {
+            @Override
+            public void onSuccess(AppInviteDialog.Result result) {
+               Log.e("Invitive","thành công");
+            }
+
+            @Override
+            public void onCancel() {
+
+            }
+
+            @Override
+            public void onError(FacebookException e) {
+
+            }
+        };
+    }
 
     public static void yKien(Context context) {
         try {

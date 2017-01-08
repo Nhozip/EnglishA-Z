@@ -284,6 +284,10 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_rate:
                 Var.rateApp(this);
                 break;
+            case R.id.nav_khac:
+                Var.initFB();
+                Var.inviteFriendFB(callbackManager,this);
+                break;
 
         }
         try {
